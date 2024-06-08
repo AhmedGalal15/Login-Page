@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fonts/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Singup</title>
+  </head>
+  <body class="vh-100">
+    <div
+      class="container w-50 h-75 position-absolute top-50 start-50 translate-middle shadow-lg p-3 rounded text-center">
+      <h1>Smart Login System</h1>
+      <form action="" id="signupForm">
+        <input
+          oninput="validation('userName', 'name', 'nameAlert')"
+          id="userName"
+          type="text"
+          value=""
+          name="name"
+          placeholder="Enter your name"
+          class="w-100 my-3 form-control form-control-lg input signupInput" />
+        <div id="nameAlert" class="alert alert-danger d-none my-2">
+          Name should be at least 3 characters
+        </div>
+        <input
+          oninput="validation('userEmail', 'email', 'emailAlert')"
+          id="userEmail"
+          type="text"
+          value=""
+          name="email"
+          placeholder="Enter your email"
+          class="w-100 my-3 form-control form-control-lg input signupInput" />
+        <div id="emailAlert" class="alert alert-danger d-none my-2">
+          email should a valid email
+        </div>
+        <input
+          id="userPassword"
+          type="password"
+          value=""
+          name="password"
+          placeholder="Enter your password"
+          class="w-100 my-3 form-control form-control-lg input" />
+        <button type="submit" class="btn w-100 submitbtn mb-4">Sign up</button>
+      </form>
+      <div class="text">
+        You have an account? <a href="index.html">Signin</a>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>

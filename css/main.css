@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(36, 53, 63);
+}
+.h-60 {
+  height: 60vh;
+}
+.container,
+section {
+  background-color: rgb(36, 53, 63);
+}
+.input {
+  background-color: transparent;
+}
+.input::placeholder {
+  color: white;
+}
+h1 {
+  color: rgb(23, 162, 184);
+}
+.submitbtn {
+  color: rgb(23, 162, 184);
+  border-color: rgb(23, 162, 184);
+  border: 2px solid;
+}
+.submitbtn:hover {
+  color: white;
+  background-color: rgb(23, 162, 184);
+}
+.text,
+a {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+.navlink {
+  color: white;
+}
+.navlink:hover {
+  color: white;
+}
+.navlink:focus {
+  color: white;
+}
+.logoutlink {
+  text-decoration: none;
+}
